@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sml.t1r.taskapp.Activity.OneItemActivity">
+
+    <TextView
+        android:id="@+id/recycler_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        android:layout_marginStart="@dimen/all_margin_left"
+        android:textSize="@dimen/oi_row_size" />
+
+    <!--<Button
+        android:id="@+id/recycler_item_button"
+        android:text="@string/oi_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/oi_row_height"
+        android:layout_toLeftOf="@+id/recycler_item_arrow"
+        android:layout_toStartOf="@+id/recycler_item_arrow"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:textColor="@color/white"/>-->
+
+    <com.sml.t1r.taskapp.Helpers.ProgressButton
+        android:id="@+id/recycler_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/recycler_item_arrow"
+        android:layout_toStartOf="@+id/recycler_item_arrow"
+        android:clickable="true"
+        android:text="@string/oi_button_text"
+        android:textSize="@dimen/ri_text" />
+
+    <ImageView
+        android:id="@+id/recycler_item_arrow"
+        android:layout_width="@dimen/oi_row_height"
+        android:layout_height="@dimen/oi_row_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/oi_img_forward"
+        android:src="@drawable/forward" />
+
+</RelativeLayout>

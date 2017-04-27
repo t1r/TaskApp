@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+
+    <string name="ma_settings">Settings</string>
+
+    <string name="oi_button_text">Button</string>
+    <string name="oi_img_forward">forward</string>
+
+    <string name="settings_ok">Ok</string>
+    <string name="settings_row">Row</string>
+    <string name="settings_percent">%(0..1)</string>
+    <string name="settings_row_hint">Введите номер строки</string>
+    <string name="settings_percent_hint">Введите % 0..1</string>
+
+    <integer name="list_count">100</integer>
+    <integer name="list_last_count">100</integer>
+</resources>
